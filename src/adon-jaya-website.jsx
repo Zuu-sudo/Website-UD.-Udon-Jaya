@@ -413,11 +413,10 @@ export default function AdonJayaWebsite() {
 
       {/* ── Navigation ── */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrollY > 50
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrollY > 50
             ? "bg-stone-950/95 backdrop-blur-2xl shadow-2xl shadow-black/30 border-b border-stone-800/40"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
@@ -780,13 +779,12 @@ export default function AdonJayaWebsite() {
             <button
               onClick={submitRating}
               disabled={rating === 0 || submitSuccess}
-              className={`group relative w-full py-4 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden ${
-                rating > 0 && !submitSuccess
+              className={`group relative w-full py-4 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden ${rating > 0 && !submitSuccess
                   ? "bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-stone-950 shadow-lg shadow-amber-500/30"
                   : submitSuccess
                     ? "bg-green-500 text-white"
                     : "bg-stone-700 text-stone-500 cursor-not-allowed"
-              }`}
+                }`}
             >
               {rating > 0 && !submitSuccess && (
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -1037,7 +1035,7 @@ function AboutText() {
       </h2>
       <p className="text-stone-400 mt-6 leading-relaxed">
         UD. Adon Jaya merupakan peternak bebek dan produsen telur asin yang
-        berlokasi di Kampung Bebek, Kabupaten Sidoarjo — pusat peternakan bebek
+        berlokasi di Kampung Bebek, Kabupaten Sidoarjo pusat peternakan bebek
         di Jawa Timur.
       </p>
       <p className="text-stone-400 mt-4 leading-relaxed">
